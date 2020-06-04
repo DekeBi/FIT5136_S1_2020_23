@@ -1,0 +1,28 @@
+﻿*{ margin:0px; padding:0px;}
+body 
+{
+     line-height:1.5;
+     color:#000;
+     max-width:768px;
+     margin:0 auto;
+}
+a{ text-decoration:none;}
+h1.tt,.ava,.pro,.lout{ text-align:center;}
+h1.tt{ padding:4% 0px;}
+.ava { margin-top:10%;}
+.ava img{ width:100px; height:100px;}
+.ava .name{ padding:4% 0px;}
+.pro a{ display:inline-block; border:2px solid #000; width:80%; max-width:400px; height:50px; line-height:50px; color:#000; font-size:24px;}
+.lout{ margin-top:45%;}
+.lout a{ display:inline-block; border:2px solid #000; width:80%; max-width:400px; height:50px; line-height:50px; color:#000; font-size:24px;}
+.back img{ width:30px;}
+h2.tt{  text-align:center; padding:4% 0px; position:relative; }
+h2 .back{
+    position: absolute;
+    left: 39px;
+    top: 11%;
+}
+form .item{ text-align:center;}
+form .item input[type=text],form .item input[type=password]{ outline:0; display: inline-block;width: 79%; max-width: 400px; height: 50px; line-height: 50px; color: #000; font-size: 24px; border:none; border: 1px solid #000; padding-left:1%; margin-bottom:4%; }
+.btns{ text-align:center; margin-top:4%;}
+.btns input{outline:0; display: inline-block; height: 50px; line-height: 50px;color: #000; font-size: 20px; border:none; border: 1px solid #000; width:45%; max-width: 300px; cursor:pointer;  }
