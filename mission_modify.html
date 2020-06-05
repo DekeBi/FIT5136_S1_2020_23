@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Background Management</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<link rel="stylesheet" href="lib/layui_exts/lib/layui/css/layui.css" media="all">
+		<link rel="stylesheet" href="lib/layui_exts/css/admin.css" media="all">
+	</head>
+	<body>
+        <div class="layui-fluid">
+			<div class="layui-col-md12">
+				<form class="layui-form layui-form-pane" action="" id="frm-reg" >
+					<div class="layui-form-item">
+						<label class="layui-form-label">Mission ID</label>
+						<div class="layui-input-block">
+							<input type="text" name="mission id" id="mission id" value="" placeholder="7030" class="layui-input">
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">Mission Name</label>
+						<div class="layui-input-block">
+							<input type="text" name="mission name" id="mission name" value="" placeholder="A1" class="layui-input">
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">Mission Type</label>
+						<div class="layui-input-block">
+							<select name="article_category_id" id="article_category_id" lay-filter="article_category_id">
+								<option value="0"selected="selected">Railways</option>
+								<option value="1"selected="selected">agriculture</option>
+								<option value="1"selected="selected">agriculture, architecture</option>
+								<option value="1"selected="selected">agriculture, town planning</option>
+								<option value="1"selected="selected">architecture</option>
+								<option value="1"selected="selected">architecture, infrastructure</option>
+								<option value="1"selected="selected">architecture, prison</option>
+								<option value="1"selected="selected">architecture, railways</option>
+								<option value="1"selected="selected">architecture, town planning</option>
+								<option value="1"selected="selected">infrastructure</option>
+								<option value="1"selected="selected">infrastructure, prison</option>
+								<option value="1"selected="selected">infrastructure, railways</option>
+								<option value="1"selected="selected">infrastructure, roads</option>
+								<option value="1"selected="selected">infrastructure, town planning</option>
+								<option value="1"selected="selected">medical</option>
+								<option value="1"selected="selected">medical, roads</option>
+								<option value="1"selected="selected">medical, town planning</option>
+								<option value="1"selected="selected">prison</option>
+								<option value="1"selected="selected">prison, architecture</option>
+								<option value="1"selected="selected">prison, infrastructure</option>
+								<option value="1"selected="selected">prison, medical</option>
+								<option value="1"selected="selected">prison, town planning</option>
+								<option value="1"selected="selected">railways</option>
+								<option value="1"selected="selected">railways, architecture</option>
+								<option value="1"selected="selected">railways, town planning</option>
+								<option value="1"selected="selected">roads</option>
+								<option value="1"selected="selected">roads, architecture</option>
+								<option value="1"selected="selected">roads, infrastructure</option>
+								<option value="1"selected="selected">roads, medical</option>
+								<option value="1"selected="selected">roads, town planning</option>
+								<option value="1"selected="selected">town planning</option>
+								<option value="1"selected="selected">town planning, architecture</option>
+								<option value="1"selected="selected">town planning, medical</option>
+								<option value="1"selected="selected">town planning, prison</option>
+								<option value="1"selected="selected">town planning, railways</option>
+								<option value="1"selected="selected">town planning, roads</option>
+							</select>
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">Mission Description</label>
+						<div class="layui-input-block">
+							<input type="text" name="mission description" id="mission description" value="" placeholder="Mauris eu turpis. Nulla aliquet. Proin velit. Sed malesuada augue ut lacus. Nulla tincidunt, neque vitae semper egestas, urna justo faucibus lectus, a sollicitudin orci" class="layui-input">
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">Country of Origin</label>
+						<div class="layui-input-block">
+							<select name="article_category_id" id="article_category_id" lay-filter="article_category_id">
+								<option value="0"selected="selected">Please select the country of origin</option>
+								<option value="1"selected="selected">Australia</option>
+								<option value="1"selected="selected">Austria</option>
+								<option value="1"selected="selected">Belgium</option>
+								<option value="1"selected="selected">Belize</option>
+								<option value="1"selected="selected">Canada</option>
+								<option value="1"selected="selected">China</option>
+								<option value="1"selected="selected">French</option>
+								<option value="1"selected="selected">New Zeland</option>
+								<option value="1"selected="selected">United States</option>	
+							</select>
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">Countries Allowed</label>
+						<div class="layui-input-block">
+							<select name="article_category_id" id="article_category_id" lay-filter="article_category_id">
+								<option value="0"selected="selected">Please select countries allowed</option>
+								<option value="1"selected="selected">Australia</option>
+								<option value="1"selected="selected">Austria</option>
+								<option value="1"selected="selected">Belgium</option>
+								<option value="1"selected="selected">Belize</option>
+								<option value="1"selected="selected">Canada</option>
+								<option value="1"selected="selected">China</option>
+								<option value="1"selected="selected">French</option>
+								<option value="1"selected="selected">New Zeland</option>
+								<option value="1"selected="selected">United States</option>	
+							</select>
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">Coordinator's name</label>
+						<div class="layui-input-block">
+							<input type="text" name="coordinator's name" id="coordinator's name" value="" placeholder="Angela Sexton" class="layui-input">
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">Coordinator's contact information</label>
+						<div class="layui-input-block">
+							<input type="text" name="coordinator's contact information" id="coordinator's contact information" value="" placeholder="+61412346997" class="layui-input">
+						</div>
+					</div>
+					<div class="layui-form-item layui-form-text">
+						<label class="layui-form-label">Employment Requipments</label>
+						<div class="layui-input-block">
+							<select name="article_category_id" id="article_category_id" lay-filter="article_category_id">
+								<option value="0"selected="selected">Please select employment requipments</option>
+								<option value="1"selected="selected">builder</option>
+								<option value="1"selected="selected">carpenter</option>
+								<option value="1"selected="selected">civil engineer</option>
+								<option value="1"selected="selected">designer</option>
+								<option value="1"selected="selected">electrician</option>
+								<option value="1"selected="selected">general practitioner</option>
+								<option value="1"selected="selected">manufacturer</option>
+								<option value="1"selected="selected">nurse</option>
+								<option value="1"selected="selected">painter</option>
+								<option value="1"selected="selected">surgeon</option>
+							</select>
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">Cargo Requirements</label>
+						<div class="layui-input-block">
+							<select name="article_category_id" id="article_category_id" lay-filter="article_category_id">
+								<option value="0"selected="selected">Please select cargo equipments</option>
+								<option value="1"selected="selected">beef</option>
+								<option value="1"selected="selected">cereals</option>
+								<option value="1"selected="selected">chicken</option>
+								<option value="1"selected="selected">concrete</option>
+								<option value="1"selected="selected">dessert</option>
+								<option value="1"selected="selected">noodles</option>
+								<option value="1"selected="selected">pasta</option>
+								<option value="1"selected="selected">pies</option>	
+								<option value="1"selected="selected">pork</option>
+								<option value="1"selected="selected">salads</option>
+								<option value="1"selected="selected">sandwiches</option>
+								<option value="1"selected="selected">seafood</option>
+								<option value="1"selected="selected">seeds</option>
+								<option value="1"selected="selected">soups</option>
+								<option value="1"selected="selected">surgical</option>
+								<option value="1"selected="selected">water</option>	
+								<option value="1"selected="selected">wood</option>	
+							</select>
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">Launch Date</label>
+						<div class="layui-input-block">
+							<input type="date" name="launch date" id="launch date" value="26/12/2023">
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">Location of the destination</label>
+						<div class="layui-input-block">
+							<input type="text" name="destination" id="destination" value="" placeholder="Melbourne" class="layui-input">
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">Duration of the mission(months)</label>
+						<div class="layui-input-block">
+							<input type="text" name="duration" id="duration" value="" placeholder="34" class="layui-input">
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">Status of the mission</label>
+						<div class="layui-input-block">
+							<select name="article_category_id" id="article_category_id" lay-filter="article_category_id">
+								<option value="0"selected="selected">Planning phase</option>
+								<option value="1"selected="selected">Departed Earth</option>
+								<option value="1"selected="selected">Landed on Mars</option>
+								<option value="1"selected="selected">Mission in progress</option>
+								<option value="1"selected="selected">Returned to Earth</option>
+								<option value="1"selected="selected">Mission completed</option>	
+							</select>
+						</div>
+					</div>
+			
+					<div class="layui-form-item" style="margin-left: 10px;">
+						<input type="hidden" name="id" id="id" value="">
+						<input type="hidden" name="request_url" id="request_url" value="">
+						<button class="layui-btn" id="execute" lay-submit="execute" lay-filter="execute"><i class="layui-icon layui-icon-form"></i>Save</button>
+					</div>
+				</form>
+			</div>
+		</div>	
+    </body>
+</html>
+<script src="lib/layui_exts/js/jquery-3.4.1.min.js"></script>
+<script src="lib/layui_exts/lib/layui/layui.js"></script>
+<script src="lib/layui_exts/js/admin.js"></script>
+<script>
+    layui.extend({
+        tinymce: '{/}./lib/layui_exts/tinymce/tinymce'
+    }).use(['tinymce', 'util', 'layer'], function () {
+        var tinymce = layui.tinymce
+        var edit = tinymce.render({
+            elem: "#container"
+            , height: 600
+            , width:'100%'
+        });
+    });
+</script>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Background Managemnet</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<link rel="stylesheet" href="lib/layui/css/layui.css" media="all">
+		<link rel="stylesheet" href="css/admin.css" media="all">
+	</head>
+	<body>
+        <div class="layui-fluid">
+			<div class="layui-col-md12">
+				<div class="layui-navs">
+					<span class="layui-breadcrumb" lay-separator="—">
+						<a href="javascript:;">System Setting</a>
+						<a href="javascript:;">Mission</a>
+						<a><cite>Mission List</cite></a>
+					</span>
+					<a class="layui-btn layui-btn-small" style="line-height:1.6em;float:right;height: 36px;" href="javascript:location.replace(location.href);" title="Refresh">
+						<i class="layui-icon layui-icon-refresh" style="line-height:36px;font-size: 16px;"></i>
+					</a>
+				</div>
+			</div>
+			<div class="layui-col-md12">
+				<div class="layui-card">
+					<div class="layui-card-body ">
+						<form class="layui-form layui-col-space5">
+							<div class="layui-inline layui-show-xs-block">
+								<select name="system_role_id" lay-filter="system_role_id">
+									<option value="0">Please select status of the mission</option>
+									<option value="1">Planning phase</option>
+									<option value="1">Departed Earth</option>
+									<option value="1">Landed on Mars</option>
+									<option value="1">Mission in progress</option>
+									<option value="1">Returned to Earth</option>
+									<option value="1">Mission completed</option>
+								</select>
+							</div>
+							<div class="layui-inline layui-show-xs-block">
+								<input type="text" name="name" value=""  placeholder="Please enter Mission ID or Mission Name" autocomplete="off" class="layui-input">
+							</div>
+							<div class="layui-inline layui-show-xs-block">
+								<button class="layui-btn"  lay-submit="" lay-filter="search"><i class="layui-icon">&#xe615;</i></button>
+							</div>
+						</form>
+					</div>
+					<div class="layui-card-header">
+						<button class="layui-btn" onclick="execute_open('Add Mission', 'mission_create.html', '1000', '700')"><i class="layui-icon"></i>Add Mission</button>
+					</div>
+					<div class="layui-card-body">
+						<table class="layui-table layui-form">
+							<thead>
+								<tr>
+									<th>Mission ID</th>
+									<th>Mission Name</th>
+									<th>Mission Type</th>
+									<th>Mission Description</th>
+									<th>Country of Origin</th>
+									<th>Countries Allowed</th>
+									<th>Coordinator's Name</th>
+									<th>Coordinator's Contact Number</th>
+									<th>Job(s)</th>
+									<th>Employment Requirements</th>
+									<th>Cargo Requirements</th>
+									<th>Launch Date</th>
+									<th>Location(coordinates or address) of the Destination</th>
+									<th>Duration of the Mission(months)</th>
+									<th>Status of the Mission</th>
+									<th>Management</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>7030</td>
+									<td>A1</td>
+									<td>railways</td>
+									<td>Mauris eu turpis. Nulla aliquet. Proin velit. Sed malesuada augue ut lacus. Nulla tincidunt, neque vitae semper egestas, urna justo faucibus lectus, a sollicitudin orci</td>
+									<td>United Kingdom</td>
+									<td>Australia, Newland</td>
+									<td>Angela Sexton</td>	
+									<td>+61412346797</td>
+									<td>XXXXX</td>
+									<td>painter</td>
+									<td></td>
+									<td>26/12/2023</td>
+									<td>Melbourne</td>
+									<td>34</td>
+									<td>Planning phase</td>
+									<td>
+										<a class="layui-btn layui-btn-sm layui-btn-normal" title="Edit" onclick="execute_open('Modify Mission', 'mission_modify.html?id=1', 1000, 800)" href="javascript:;"><i class="layui-icon layui-icon-edit"></i>Modify</a>
+										<a class="layui-btn layui-btn-sm layui-btn-danger" title="Delete" onclick="execute_del(this, 1, '')" href="javascript:;"><i class="layui-icon layui-icon-delete"></i>Delete</a>
+									</td>
+								</tr>
+								<tr>
+									<td>7066</td>
+									<td>A2</td>
+									<td>architecture, railways</td>
+									<td>a neque. Nullam ut nisi a odio semper cursus. Integer mollis. Integer tincidunt aliquam arcu. Aliquam ultrices iaculis</td>
+									<td>Canada</td>
+									<td>Canada</td>
+									<td>Hilda Neal</td>	
+									<td>+61412346997</td>
+									<td>XXXXX</td>
+									<td>painter</td>
+									<td>XXXXX</td>
+									<td>03/10/2025</td>
+									<td>Melbourne</td>
+									<td>88</td>
+									<td>Planning phase</td>
+									<td>
+										<a class="layui-btn layui-btn-sm layui-btn-normal" title="Edit" onclick="execute_open('Modify Mission', 'mission_modify.html?id=1', 1000, 800)" href="javascript:;"><i class="layui-icon layui-icon-edit"></i>Modify</a>
+										<a class="layui-btn layui-btn-sm layui-btn-danger" title="Delete" onclick="execute_del(this, 1, '')" href="javascript:;"><i class="layui-icon layui-icon-delete"></i>Delete</a>
+									</td>
+								</tr>
+							</tbody>
+						</table>	
+					</div>
+					<div class="page" style="text-align: center">
+						<ul class="pagination">
+							<li class="disabled"><span>Previous</span></li> 
+							<li class="active"><span>1</span></li>
+							<li><a href="javascript:;">2</a></li>
+							<li><a href="javascript:;">3</a></li>
+							<li><a href="javascript:;">4</a></li> 
+							<li><a href="javascript:;">Next</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+        </div>
+    </body>
+</html>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="lib/layui/layui.js"></script>
+<script src="js/admin.js"></script>
